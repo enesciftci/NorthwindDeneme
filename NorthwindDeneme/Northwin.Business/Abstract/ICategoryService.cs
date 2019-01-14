@@ -9,6 +9,7 @@ namespace Northwin.Business.Abstract
 {
    public interface ICategoryService
    {
-       List<Category> GetlAll();
-   }
+       List<Category> GetAll();
+  
+    }
 }

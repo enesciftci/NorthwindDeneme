@@ -25,6 +25,18 @@ namespace Northwin.Business.Concrete
            _productDal.Add(product);
         }
 
+        public void Delete(Product product)
+        {
+            try
+            {
+                _productDal.Delete(product);
+            }
+            catch 
+            {
+               throw new Exception("Silme Gerçekleşmedi");
+            }
+        }
+
         public List<Product> GetAll()
        {
            return _productDal.GetAll();
@@ -39,5 +51,10 @@ namespace Northwin.Business.Concrete
        {
            return _productDal.GetAll(p => p.ProductName.ToLower().Contains(productName.ToLower()));
        }
-   }
+
+        public void Update(Product product)
+        {
+          _productDal.Update(product);
+        }
+    }
 }

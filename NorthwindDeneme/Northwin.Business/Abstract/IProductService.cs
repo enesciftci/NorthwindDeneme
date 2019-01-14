@@ -14,5 +14,7 @@ namespace Northwin.Business.Abstract
         List<Product> GetProductsByCategory(int categoryId);
         object GetProductsByProductName(string productName);
         void Add(Product product);
+        void Update(Product product);
+        void Delete(Product product);
     }
 }

@@ -18,9 +18,10 @@ namespace Northwin.Business.Concrete
            _categoryDal = categoryDal;
        }
 
-       public List<Category> GetlAll()
+       public List<Category> GetAll()
        {
            return _categoryDal.GetAll();
        }
+
     }
 }
