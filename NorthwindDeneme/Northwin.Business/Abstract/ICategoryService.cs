@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Northwind.Entities.Concrete;
 
-namespace Northwind.DataAccess.Abstract
+namespace Northwin.Business.Abstract
 {
-   public interface ICategoryDal:IEntityRepostory<Category>
-    {
-
-    }
+   public interface ICategoryService
+   {
+       List<Category> GetlAll();
+   }
 }
